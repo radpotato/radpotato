@@ -1,5 +1,224 @@
-extends layout
-
-block content
-  h1= title
-  p Welcome to #{title}
+!!! true
+html(xmlns='http://www.w3.org/1999/xhtml', xml:lang='ko', lang='ko')
+head
+    meta(http-equiv='Content-Type', content='text/html; charset=UTF-8')
+    title 스터디 예제 (탭메뉴)
+    link(rel='stylesheet', href='stylesheets/style.css', type='text/css')
+  body
+    #tabMenu
+      ul#menu.menu
+        li
+          a(href='#', rel='rTime')
+            | 실시간형
+            br
+            | 모듈
+        li
+          a.oneLine(href='#', rel='doc') 문서도구
+        li
+          a.oneLine(href='#', rel='down') 다운로드
+      #rTime.tabCont
+        ul#tabNavi.tabNav
+          li
+            a(href='#') NOW
+          li
+            a(href='#') PAST
+          li
+            a(href='#') NEXT
+          li
+            a(href='#') MORE
+        #now.on
+          .tabBar
+            .thumb
+              img(src='http://radpotato.com/js_study/121014/img/lego.jpg', alt='')
+            .innerCont
+              h4 프랑스에서
+              p 프랑스 한 카페에 전시되어있던 레고. 옐로우 계통의 인테리어와 아담한 레고가 돋보이는 구조였다.
+          .tabBar
+            .thumb
+              img(src='http://radpotato.com/js_study/121014/img/lego.jpg', alt='')
+            .innerCont
+              h4 프랑스에서
+              p 프랑스 한 카페에 전시되어있던 레고. 옐로우 계통의 인테리어와 아담한 레고가 돋보이는 구조였다.
+          .tabBar
+            .thumb
+              img(src='http://radpotato.com/js_study/121014/img/lego.jpg', alt='')
+            .innerCont
+              h4 프랑스에서
+              p 프랑스 한 카페에 전시되어있던 레고. 옐로우 계통의 인테리어와 아담한 레고가 돋보이는 구조였다.
+          .tabBar
+            .thumb
+              img(src='http://radpotato.com/js_study/121014/img/lego.jpg', alt='')
+            .innerCont
+              h4 프랑스에서
+              p 프랑스 한 카페에 전시되어있던 레고. 옐로우 계통의 인테리어와 아담한 레고가 돋보이는 구조였다.
+          .tabBar
+            .thumb
+              img(src='http://radpotato.com/js_study/121014/img/lego.jpg', alt='')
+            .innerCont
+              h4 프랑스에서
+              p 프랑스 한 카페에 전시되어있던 레고. 옐로우 계통의 인테리어와 아담한 레고가 돋보이는 구조였다.
+        #past.off
+          .tabBar
+            .thumb
+              img(src='http://radpotato.com/js_study/121014/img/cyLogo.jpg', alt='')
+            .innerCont
+              h4 프랑스에서
+              p 프랑스 한 카페에 전시되어있던 레고. 옐로우 계통의 인테리어와 아담한 레고가 돋보이는 구조였다.
+          .tabBar
+            .thumb
+              img(src='http://radpotato.com/js_study/121014/img/cyLogo.jpg', alt='')
+            .innerCont
+              h4 프랑스에서
+              p 프랑스 한 카페에 전시되어있던 레고. 옐로우 계통의 인테리어와 아담한 레고가 돋보이는 구조였다.
+          .tabBar
+            .thumb
+              img(src='http://radpotato.com/js_study/121014/img/cyLogo.jpg', alt='')
+            .innerCont
+              h4 프랑스에서
+              p 프랑스 한 카페에 전시되어있던 레고. 옐로우 계통의 인테리어와 아담한 레고가 돋보이는 구조였다.
+          .tabBar
+            .thumb
+              img(src='http://radpotato.com/js_study/121014/img/cyLogo.jpg', alt='')
+            .innerCont
+              h4 프랑스에서
+              p 프랑스 한 카페에 전시되어있던 레고. 옐로우 계통의 인테리어와 아담한 레고가 돋보이는 구조였다.
+          .tabBar
+            .thumb
+              img(src='http://radpotato.com/js_study/121014/img/cyLogo.jpg', alt='')
+            .innerCont
+              h4 프랑스에서
+              p 프랑스 한 카페에 전시되어있던 레고. 옐로우 계통의 인테리어와 아담한 레고가 돋보이는 구조였다.
+        #next.off
+          .tabBar
+            .thumb
+              img(src='http://radpotato.com/js_study/121014/img/cocktail.jpg', alt='')
+            .innerCont
+              h4 프랑스에서
+              p 프랑스 한 카페에 전시되어있던 레고. 옐로우 계통의 인테리어와 아담한 레고가 돋보이는 구조였다.
+          .tabBar
+            .thumb
+              img(src='http://radpotato.com/js_study/121014/img/cocktail.jpg', alt='')
+            .innerCont
+              h4 프랑스에서
+              p 프랑스 한 카페에 전시되어있던 레고. 옐로우 계통의 인테리어와 아담한 레고가 돋보이는 구조였다.
+          .tabBar
+            .thumb
+              img(src='http://radpotato.com/js_study/121014/img/cocktail.jpg', alt='')
+            .innerCont
+              h4 프랑스에서
+              p 프랑스 한 카페에 전시되어있던 레고. 옐로우 계통의 인테리어와 아담한 레고가 돋보이는 구조였다.
+          .tabBar
+            .thumb
+              img(src='http://radpotato.com/js_study/121014/img/cocktail.jpg', alt='')
+            .innerCont
+              h4 프랑스에서
+              p 프랑스 한 카페에 전시되어있던 레고. 옐로우 계통의 인테리어와 아담한 레고가 돋보이는 구조였다.
+          .tabBar
+            .thumb
+              img(src='http://radpotato.com/js_study/121014/img/cocktail.jpg', alt='')
+            .innerCont
+              h4 프랑스에서
+              p 프랑스 한 카페에 전시되어있던 레고. 옐로우 계통의 인테리어와 아담한 레고가 돋보이는 구조였다.
+        #more.off
+          .tabBar
+            .thumb
+              img(src='http://radpotato.com/js_study/121014/img/lemonSoda.jpg', alt='')
+            .innerCont
+              h4 프랑스에서
+              p 프랑스 한 카페에 전시되어있던 레고. 옐로우 계통의 인테리어와 아담한 레고가 돋보이는 구조였다.
+          .tabBar
+            .thumb
+              img(src='http://radpotato.com/js_study/121014/img/lemonSoda.jpg', alt='')
+            .innerCont
+              h4 프랑스에서
+              p 프랑스 한 카페에 전시되어있던 레고. 옐로우 계통의 인테리어와 아담한 레고가 돋보이는 구조였다.
+          .tabBar
+            .thumb
+              img(src='http://radpotato.com/js_study/121014/img/lemonSoda.jpg', alt='')
+            .innerCont
+              h4 프랑스에서
+              p 프랑스 한 카페에 전시되어있던 레고. 옐로우 계통의 인테리어와 아담한 레고가 돋보이는 구조였다.
+          .tabBar
+            .thumb
+              img(src='http://radpotato.com/js_study/121014/img/lemonSoda.jpg', alt='')
+            .innerCont
+              h4 프랑스에서
+              p 프랑스 한 카페에 전시되어있던 레고. 옐로우 계통의 인테리어와 아담한 레고가 돋보이는 구조였다.
+          .tabBar
+            .thumb
+              img(src='http://radpotato.com/js_study/121014/img/lemonSoda.jpg', alt='')
+            .innerCont
+              h4 프랑스에서
+              p 프랑스 한 카페에 전시되어있던 레고. 옐로우 계통의 인테리어와 아담한 레고가 돋보이는 구조였다.
+      #doc.tabCont.off
+        .tabBar
+          h4 문서 제목
+          p 이 문서는 전라남도 보령시에 살고 계신 한 할머니가 직접...
+        .tabBar
+          h4 문서 제목
+          p 이 문서는 전라남도 보령시에 살고 계신 한 할머니가 직접...
+        .tabBar
+          h4 문서 제목
+          p 이 문서는 전라남도 보령시에 살고 계신 한 할머니가 직접...
+        .tabBar
+          h4 문서 제목
+          p 이 문서는 전라남도 보령시에 살고 계신 한 할머니가 직접...
+        .tabBar
+          h4 문서 제목
+          p 이 문서는 전라남도 보령시에 살고 계신 한 할머니가 직접...
+      #down.tabCont.off
+        ul
+          li.tabBar
+            a(href='#') 다운 받을 파일 명
+          li.tabBar
+            a(href='#') 다운 받을 파일 명
+          li.tabBar
+            a(href='#') 다운 받을 파일 명
+          li.tabBar
+            a(href='#') 다운 받을 파일 명
+          li.tabBar
+            a(href='#') 다운 받을 파일 명
+          li.tabBar
+            a(href='#') 다운 받을 파일 명
+          li.tabBar
+            a(href='#') 다운 받을 파일 명
+          li.tabBar
+            a(href='#') 다운 받을 파일 명
+          li.tabBar
+            a(href='#') 다운 받을 파일 명
+          li.tabBar
+            a(href='#') 다운 받을 파일 명
+          li.tabBar
+            a(href='#') 다운 받을 파일 명
+          li.tabBar
+            a(href='#') 다운 받을 파일 명
+          li.tabBar
+            a(href='#') 다운 받을 파일 명
+          li.tabBar
+            a(href='#') 다운 받을 파일 명
+          li.tabBar
+            a(href='#') 다운 받을 파일 명
+          li.tabBar
+            a(href='#') 다운 받을 파일 명
+          li.tabBar
+            a(href='#') 다운 받을 파일 명
+          li.tabBar
+            a(href='#') 다운 받을 파일 명
+          li.tabBar
+            a(href='#') 다운 받을 파일 명
+          li.tabBar
+            a(href='#') 다운 받을 파일 명
+      #notice.tabNot
+        ul
+          li.on
+            a.notice(href='#') 내용 첫번째 입니다. 프랑스에서는 치즈가 유행한다는데 그 이유가..
+          li.off
+            a.alert(href='#') 내용 두번째 입니다. 프랑스에서는
+          li.off
+            a.notice(href='#') 내용 세번째 입니다. 프랑스에서는
+          li.off
+            a.alert(href='#') 내용 네번째 입니다. 프랑스에서는
+        .arrBtn
+          button(type='button', title='이전', onclick='p()') <
+          button(type='button', title='다음', onclick='n()') >
+    script(type='text/javascript', src='js/tab.js')

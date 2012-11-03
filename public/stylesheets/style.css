@@ -1,8 +1,48 @@
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-}
+html,body { height:100%; margin:0; }
+h1,h2,h3,h4,h5,h6 { margin:0; }
+ul,li { padding:0; margin:0; list-style:none; }
+a { color:#666; text-decoratioxn: none; }
+a:hover { text-decoration: underline; }
+.off { display:none; }
+.on { display:block; }
 
-a {
-  color: #00B7FF;
-}
+#tabMenu { width:360px; height:360px; border:1px solid #666; background:#f0f0f0; overflow:hidden; font-family: arial; color:#666 }
+#tabMenu .menu { overflow:hidden; }
+#tabMenu .menu > li { float:left; width:118px; height:40px; border-right:1px solid #666; border-left:1px solid #fff; text-align:center; margin:4px 0; }
+#tabMenu .menu > li:nth-child(3) { width:119px; border-right:0; }
+#tabMenu .menu > li a { display:block; width:80px; margin:0 auto; color:#666; text-decoration: none; height:42px; padding-top:2px; }
+#tabMenu .menu > li a:hover { text-decoration: underline; }
+#tabMenu .menu > li .oneLine { height:34px; padding-top:10px; }
+
+#tabMenu .tabCont { width:360px; height: 287px; overflow-y: scroll; overflow-x: hidden; border-top:1px solid #666; }
+#tabMenu .tabCont .tabNav { width:345px; height:34px; border-bottom:1px solid #666; padding-left:15px; }
+#tabMenu .tabCont .tabNav > li { float:left; padding:7px 8px 3px; }
+#tabMenu .tabCont .tabBar { width:360px; padding:6px 0 7px; border-bottom:1px solid #666; border-top:1px solid #fff; overflow:hidden; }
+#tabMenu .tabCont .tabBar .thumb { float:left; width:70px; margin-right:10px; }
+#tabMenu .tabCont .tabBar .thumb img { width:50px; height:50px; margin:0 0 0 15px; }
+#tabMenu .tabCont .tabBar .innerCont { float:left; width:260px; padding-top:7px; }
+#tabMenu .tabCont .tabBar .innerCont p,
+#tabMenu .tabCont .tabBar .innerCont h4 { width:260px; overflow:hidden; text-overflow:ellipsis; white-space: nowrap;}
+#tabMenu .tabCont .tabBar .innerCont p { margin:5px 0 0; }
+
+#tabMenu .tabCont .tabBar > h4 { padding:5px 0 5px 15px; }
+#tabMenu .tabCont .tabBar > p { margin:0; padding-left:15px; overflow:hidden; text-overflow: ellipsis; white-space: nowrap; }
+#tabMenu .tabCont .tabBar > a { padding-left: 12px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+
+#tabMenu .tabNot { width:360px; padding-top:3px; border-top:1px solid #666; }
+#tabMenu .tabNot ul { float:left; width:270px; padding-left:10px; }
+#tabMenu .tabNot ul li { width:280px; text-overflow:ellipsis; overflow:hidden; white-space:nowrap; }
+#tabMenu .tabNot .arrBtn { float:left; width:50px; padding-left:30px; }
+#tabMenu .tabNot .arrBtn button { float:left; width:20px; border:0; padding:0; margin:1px 5px 0 0; background:none; cursor:pointer; }
+#tabMenu .tabNot ul li .notice:before { content:"[공지] " }
+#tabMenu .tabNot ul li .alert:before { content:"[경고] " }
+
+#tabMenu #layer { position:absolute; left:50%; top:50%; padding:0; z-index:3; }
+#tabMenu #layer.tabBar .thumb { float:none; width:100%; height:100%; margin:0; }
+#tabMenu #layer.tabBar img { width:100%; height:100%; margin:0; }
+#tabMenu #layer.tabBar .innerCont { position:absolute; float:none; width:98.5%; padding-left:1.5%; overflow:hidden; bottom:0; left:0; background:#000; opacity: .8; color:#fff; }
+#tabMenu #layer.tabBar .innerCont > p { width:100%; overflow:auto; white-space: normal; padding-bottom:7px; }
+
+#doc #layer { position:absolute; left:50%; top:50%; width:720px; height:620px; overflow-y:scroll; margin-left:-360px; margin-top:-310px; background:#fff;}
+#doc #layer.tabBar > p { white-space: normal; overflow:auto; padding:0 15px; }
+#dimd { position:absolute;left:0; top:0; width:100%; height:100%; background:#666; opacity: 0.6; z-index:2; }
